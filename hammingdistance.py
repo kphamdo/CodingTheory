@@ -30,10 +30,15 @@ def subset(length, distance):
             subset.append(set[i])
     return subset
 
+# A code has parameters (n, M, d)
+# n = length
+# M = size (measure of efficiency of the code)
+# d = distance/hamming distance (indication of error-correcting capability)
 
-#returns the maximum size for a subset of vectors of the given length
-#that all have a hamming distance given by distance
-def maxDistanceSubset(length, distance):
+# Given the length and distance of a code, this function returns the
+# maximum size of the code alphabet. (returns the maximum size for a subset
+# of vectors of the given length that all have a hamming distance given by distance)
+def size(length, distance):
     #list[0] is always the zero vector
     list = subset(length, distance)
     solution = []
@@ -62,6 +67,12 @@ def maxDistanceSubset(length, distance):
     return max
 
 
-for i in range(5, 8):
-    for j in range(3, i):
-        print("length:", i, " distance:",j, " max subset size:", maxDistanceSubset(i, j))
+# Given the size and length of a code, this function returns the
+# hamming distance between each element.
+def distance(size, length):
+    pass
+
+# Given the size and distance of a code, this function returns
+# the length of the codes.
+def length(size, distance):
+    pass
