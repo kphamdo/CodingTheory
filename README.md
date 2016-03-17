@@ -1,4 +1,4 @@
-###Coding Theory
+##Coding Theory
 
 This program is a computational approach to the main coding theory problem. We examine binary codes, or codes over the alphabet {0, 1}.
 
